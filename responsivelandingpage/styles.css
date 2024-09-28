@@ -1,0 +1,115 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.8;  /* Increased line-height for better readability */
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Section styles */
+section {
+    padding: 100px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Align content vertically */
+}
+
+h1, h2 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 20px 0;  /* Added more space above and below headings */
+    line-height: 1.5;  /* Spacing between the lines of text in headings */
+}
+
+p {
+    max-width: 700px;  /* Limit the width of paragraphs for readability */
+    margin: 20px 0;    /* Add space between paragraphs */
+    line-height: 1.8;  /* Increase line-height between lines of text */
+    color: #444;       /* Softer color for paragraph text */
+}
+
+/* Section backgrounds with dark shades */
+#home {
+    background: #ad4545;  /* Dark background for a striking hero section */
+    color: #ffffff;
+}
+
+#about {
+    background: #843ac2;  /* Dark gray */
+    color: #f4f4f4;
+}
+
+#services {
+    background: #b41e87;  /* Dark muted black */
+    color: #eeeeee;
+}
+
+#contact {
+    background: #11b119;  /* Soft black with a hint of blue */
+    color: #ffffff;
+}
+
+/* Navbar styling */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;  /* Increased padding for more space inside the navbar */
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;  /* Increased spacing between the menu items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect with dark color transition */
+nav ul li a:hover {
+    background-color: #555;  /* Slightly lighter gray on hover */
+    color: #f4f4f4;         /* Soft white for contrast */
+}
+
+/* Change navbar background on scroll */
+.scrolled {
+    background-color: #000000; /* Solid black background when scrolled */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.scrolled a {
+    color: #eeeeee; /* Slightly off-white text for better readability */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
